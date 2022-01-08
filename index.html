@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parchase Confitmation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <main class="container my-4">
+        <section class="row row-cols-md-2 g-md-5">
+            <div class="px-md-5">
+                <img src="images/mac.png" class="img-fluid" alt="">
+            </div>
+            <div class="px-md-5">
+                <!-- abouts header and paragraph -->
+                <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+
+                <!-- memory buttons -->
+                <h4 class="mt-5">Memory</h4>
+                <button class="btn btn-outline-dark" id="ram-8gb">8GB unified memory</button>
+                <button class="btn btn-outline-dark" id="ram-16gb">16GB unified memory</button>
+
+                <!-- storage buttons -->
+                <h4 class="mt-5">Storage</h4>
+                <button class="btn btn-outline-dark" id="rom-256gb">256GB SSD storage</button>
+                <button class="btn btn-outline-dark" id="rom-512gb">512GB SSD storage</button>
+                <button class="btn btn-outline-dark" id="rom-1tb">1TB SSD storage</button>
+
+                <!-- delivery options -->
+                <h4 class="mt-5">Choose your delivery option</h4>
+                <button class="btn btn-outline-dark" id="delivery-normal">Friday, Aug 25 FREE Prime Delivery</button>
+                <button class="btn btn-outline-dark" id="delivery-premium">Friday, Aug 21 Delivery charge $20</button>
+
+                <!-- price calculations -->
+                <ul class="nav flex-column my-5 w-50">
+                    <li class="nav-item fw-bold d-flex justify-content-between align-items-center">
+                        <span>Best Price</span>
+                        <span>$1299</span>
+                    </li>
+                    <hr>
+                    <li class="nav-item fw-bold d-flex justify-content-between align-items-center">
+                        <span>Extra Memory Cost</span>
+                        <span>$<span id="memory-cost-text">0</span></span>
+                    </li>
+                    <hr>
+                    <li class="nav-item fw-bold d-flex justify-content-between align-items-center">
+                        <span>Extra Storage Cost</span>
+                        <span>$<span id="storage-cost-text">0</span></span>
+                    </li>
+                    <hr>
+                    <li class="nav-item fw-bold d-flex justify-content-between align-items-center border-bottom border-dark pb-3 mb-3">
+                        <span>Delivery charge</span>
+                        <span>$<span id="delivery-charge-text">0</span></span>
+                    </li>
+                    <li class="nav-item fw-bold d-flex justify-content-between align-items-center border-bottom border-dark pb-3 mb-3">
+                        <span>Total Price</span>
+                        <span>$<span id="total-price">1299</span></span>
+                    </li>
+                    <li class="nav-item">
+                        <p>Add Pomo code</p>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <input type="text" class="form-control" id="pomo-code">
+                        <button class="btn btn-danger" id="pomo-code-button">Apply</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <!-- total section -->
+        <section>
+            <h1 class="text-center">Total: $<span id="total">1299</span></h1>
+        </section>
+    </main>
+
+    <script src="js/parchase-confirmation.js"></script>
+</body>
+</html>
